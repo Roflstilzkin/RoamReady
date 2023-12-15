@@ -8,16 +8,20 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="nav-links">
-            <a href="#explore">Explore Destinations</a>
-            <a href="#plan">Plan Your Trip</a>
-            <a href="#discover">Discover Experiences</a>
-        </div>
+
         <div class="logo">
-            <a href="#home" class="home-link"><img src="../src/images/Logo1.png" alt="Logo" height="50" width="50"></a>
+            <a href="index.html" class="home-link"><img src="../src/images/Logo1.png" alt="Logo" height="50" width="50"></a>
         </div>
         <div class="signup">
-            <a href="#signup" class="signup-btn">Sign Up</a>
+            
+                <form action = "register.php" method = "get">
+                    <p>username:</p>
+                    <p><input type = "text" name="user" size="20"></p>
+                    <p>password:</p>
+                    <p><input type="password" name="password" size="20"/></p>
+                    <!-- <a href="#signup" class="signup-btn">Sign Up</a> -->
+                    <input type="submit" class = "signup-btn" value="register">
+                </form>
         </div>
     </div>    
     

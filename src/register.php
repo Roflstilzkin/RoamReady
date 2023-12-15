@@ -14,3 +14,9 @@ while ($row = $result->fetch()) {
     if($row['loginID']==$loginID)
     exit("<p> This username is taken. Return to the previous page and choose another");
 }
+
+$sql = "INSERT INTO $tablename ( loginID, password ) VALUES ('$loginID', 'password')";
+$pdo->exec($sql);
+
+$pdo = null;
+?>

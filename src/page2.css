@@ -2,39 +2,10 @@
 
 body{
     font-family: var(--font-primary), var(--font-secondary);
-    margin:0px;
-    padding:0px;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    background-color: var(--bg-300);
+    margin:0 px;
+    padding:0 px;
 }
 
-.nav-links,
-.logo,
-.signup {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links a{
-    margin: 0 10px;
-    text-decoration: none;
-    color: var(--text-100);
-    font-weight: bold;
-}
-
-.logo {
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.home-link img {
-    display: block;
-}
 .container{
     display:flex;
 }
@@ -43,54 +14,37 @@ body{
 }
 
 .picture {
+    position: relative;
     float: left;
-    width: 33.3%;
+    width: 100%;
     padding: 10px;
-    margin-left:40px;
+    margin-left:4px;
+    object-fit: cover;
 
     
 }
-/*
-.picture img {
-    width: 100%;
-    height: 600px;
-}
-*/
+
 .middle{
     opacity:0;
+    top: 1;
     position:absolute;
-    top: 33%;
-    left:12%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    transform: translateY(76%);
+    transition: var(--trans);
 
 }
-.middle2{
-    opacity:0;
-    position:absolute;
-    top: 33%;
-    left:46%;
 
-}
-.middle3{
-    opacity:0;
-    position:absolute;
-    top: 33%;
-    left:80%;
 
-}
 .picture:hover .middle{
-    opacity:1;
+    opacity:100%;
+    box-shadow: 0px 0px 10px -4px grey;
 }
-.picture:hover .middle2{
-    opacity:1;
-}
-.picture:hover .middle3{
-    opacity:1;
-}
-.text{
-    color:black;
-    font-weight:bold;
-    font-size: 20px;
-}
+
 .top{
    text-align: center;
 }
@@ -99,14 +53,18 @@ body{
     text-align: center;
     padding: 20px 0;
 }
-/*
-.picture {
-    flex: 1;
-    margin: 20px;
-    padding: 30px;
-    background-color: var(--bg-200);
-    border: 1px solid var(--bg-200);
-    width: 25%;
-    border-radius: 30px;
+
+.py-0{
+    padding: 4em 0;
 }
-*/
+img{
+    width: 100%;
+    display: block;
+}
+.title-wrap, .otext{
+    text-align: center;
+    padding: 1.4rem 0;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
